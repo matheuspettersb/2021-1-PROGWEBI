@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <title>Universo HQ</title>
+</head>
+<body>
+    <header id="start">
+    </header>
+    <nav>
+        <a href="#start"><img src="logo02.png" alt="Logo Universo HQ"></a>
+        <ul>
+            <li><a href="#inserir">Inserir Personagens</a></li>
+            <li><a href="#listar">Listar Todos</a></li>
+            <li><a href="#">Listagem por Perfil</a></li>
+            <li><a href="#start" id="logout">Sair</a></li>
+        </ul>
+    </nav>
+    <div class="card" id="inserir">
+        <form method="POST" action="">
+            <h1>Cadastro</h1>
+            <label class="title">Conhecido como:</label>
+            <input type="text" name="nome" id="nome" placeholder="Ex: Homem-Aranha">
+            <label class="title">Alter ego:</label>
+            <input type="text" name="ego" id="ego" placeholder="Ex: Peter Parker"> 
+            <label class="title">Franquia:</label>
+            <input type="radio" name="franquia" value="Marvel"/>Marvel
+            <input type="radio" name="franquia" value="DC"/>DC<br>
+            <label class="title">Perfil:</label>
+            <input type="radio" name="perfil" value="Heroi"/>Herói
+            <input type="radio" name="perfil" value="Vilao"/>Vilão
+            <input type="radio" name="perfil" value="Antiheroi"/>Anti-herói<br>
+            <label class="title">Poderes:</label>
+            <textarea name="poderes" id="poderes" cols="30" rows="10"></textarea>
+            <input type="submit" value="Cadastrar" >
+        </form>
+    </div>
+    <div class="card" id="listar">
+        <table id="listagem">
+            <tr>
+                <th>Nome</th>
+                <th>Alter ego</th>
+                <th>Franquia</th>
+                <th>Perfil</th>
+                <th>Poderes</th>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+    </footer>
+    <div id="footer">
+        <small>&copy; João Vitor de Oliveira, Matheus Martinenghi e Natália Sens Weise</small>
+    </div>
+
+</body>
+</html>

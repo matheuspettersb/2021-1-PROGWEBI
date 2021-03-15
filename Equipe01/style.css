@@ -1,0 +1,170 @@
+body{
+    background-color:  hsl(0, 0%, 86%);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    padding: 60px 0px;
+    background-image: url(header02.jpg);
+    opacity: 40%;
+}
+
+nav{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    width: 230px;
+    position: relative;
+    margin-left: 15px;
+    margin-top: -35px;
+}
+
+nav h1{
+    display: inline;
+    margin-left: 20px;
+    font-size: 40px;
+    color:  rgb(44, 44, 44);
+}
+
+nav ul li{
+    display: inline;
+    position: relative;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #9c0606;
+}
+
+#logout{
+}
+
+#logout:hover{
+    color: #9c0606;
+}
+
+.card{
+    padding: 20px;
+    margin: 60px 20px;
+    margin-left: 35%;
+    width: 25%;
+    line-height: 30px;
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(192, 192, 192);
+    color:  rgb(44, 44, 44);
+    box-shadow: 0 5px 10px #888888;
+}
+
+.card h1{
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.card input[type=text], textarea{
+    width: 100%;
+    padding: 5px 0px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+}
+
+.card input[type=text]:focus, textarea:focus{
+    outline: 0;
+    border-bottom: 2px solid #9c0606;
+}
+
+.card .title{
+    font-weight: bold;
+    font-size: 15px;
+}
+.card label{
+    font-size: 13px;
+}
+
+.card input[type=submit]{
+    color: #FFF;
+    padding: 10px 20px;
+    background-color: #9c0606;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border: none !important;
+    border-radius: 4px;
+}
+
+.card input[type=submit]:hover{
+    background-color: #b61f1f;
+}
+
+#listar{
+    width: 63% !important;
+    margin-left: 17%;
+}
+
+textarea{
+    width: 96% !important;
+    padding: 5px;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 4px;
+}
+
+footer{
+    padding: 40px 0px;
+    background-image: url(header02.jpg);
+    opacity: 35%;
+}
+
+#footer {
+    text-align: center;
+    font-weight: 700;
+    margin-top: -50px;
+    position: relative;
+    font-size: 18px;
+}
+
+@media(max-width: 800px){
+
+    nav{
+        flex-wrap: wrap;
+    }
+    
+    nav ul{
+        margin-top: 10px;
+    }
+
+    .card{
+        width: 64%;
+        margin-left: 14%;
+    }
+
+    #listar{
+        margin-left: 15% !important;
+    }
+
+    table, th, td{
+        padding: 0;
+        margin-left: -5px;
+    }
+
+    #footer{
+        font-size: 14px;
+    }
+}
